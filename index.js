@@ -5,6 +5,7 @@ let form=document.getElementById("form");
 
 
 submit.addEventListener('click',(e)=>{
+    e.preventDefault();
     if(!mail.value.match(/^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+.+[com]+$/)){
         error.style.display="block";
         mail.style.borderColor="hsl(4, 100%, 67%)";
