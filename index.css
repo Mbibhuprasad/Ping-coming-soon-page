@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500;600&family=Big+Shoulders+Display:wght@700&family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500&family=Inter:wght@400;700&family=Josefin+Sans:wght@300;400;600&family=Karla&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Libre+Franklin:wght@300;600;700&family=Manrope:wght@500;700&family=Montserrat:wght@500;700&family=Open+Sans:wght@400;600;700&family=Outfit:wght@400;700&family=Overpass:wght@400;700&family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --Pale-Blue: hsl(223, 100%, 88%);
+    --Light-Red: hsl(354, 100%, 66%);
+    --Gray: hsl(0, 0%, 59%);
+    --Very-Dark-Blue: hsl(209, 33%, 12%);
+}
+
+body {
+    font-size:20px;
+    font-family: Libre Franklin;
+    background-color: var(--bg-color);
+}
+
+main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 37%;
+    text-align: center;
+}
+
+.logo {
+    margin: 4rem auto 2rem auto;
+    width: 5.5rem;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.content span {
+    font-weight: 500;
+    color: var(--Gray);
+}
+
+.content p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0.8rem;
+    color: var(--Very-Dark-Blue);
+}
+
+form {
+    margin-top: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+
+input ,button {
+    border: none;
+    height: 3.3rem;
+    padding: 1rem;
+    display: block;
+    border-radius: 1.8rem;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 0.7rem;
+    border: 1px solid var(--Pale-Blue);
+}
+
+.input-form {
+    width: 65%;
+}
+
+button {
+    width: 30%;
+    color: white;
+    background-color: var(--blue);
+}
+
+button:hover {
+    cursor: pointer;
+    transition: background-color 0.5s;
+    background-color: hsl(223, 100%, 74%);
+}
+
+#error {
+    display: none;
+    color: red;
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+.image {
+    width: 90%;
+    margin: 4rem auto 3rem auto;
+}
+
+.image img {
+    width: 100%;
+}
+
+.social-img {
+    display: flex;
+    justify-content: center;
+}
+
+.social-img div {
+    border: 1px solid var(--Pale-Blue);
+    padding: 0.6rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+}
+
+.social-img div:hover {
+    background-color: var(--blue);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.social-img i {
+    color: var(--blue);
+    width: 100%;
+}
+
+#copy {
+    font-size: 1rem;
+    color: var(--Gray);
+    margin: 2rem auto;
+}
+
+@media screen and (max-width:900px) {
+    
+    .container {
+        width: 90%;
+    }    
+
+    form {
+        flex-direction: column;
+    }
+
+    .input-form {
+        width: 100%;
+    }
+
+    #error {
+        text-align: center;
+    }
+
+    input {
+        width: 100%;
+    }
+    button {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+}
